@@ -13,3 +13,28 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+
+$(function(){
+  // Side navigation 
+  var $sidebar   = $(".sidebar"), 
+      $window    = $(window),
+      offset     = $sidebar.offset(),
+      topPadding = 15;
+
+    $window.scroll(function() {
+      if ($window.scrollTop() > offset.top) {
+          $sidebar.stop().animate({
+              marginTop: $window.scrollTop() - offset.top + topPadding
+          });
+      } else {
+          $sidebar.stop().animate({ marginTop: 0 });
+      }
+
+      if($window.scrollTop() <= 320){
+        $('.sidebar').removeClass('alt')
+      } else {
+        $('.sidebar').addClass('alt')
+      }
+    });
+});
