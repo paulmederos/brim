@@ -85,6 +85,7 @@ hr {
   display: block;
   padding: .5em 1em .5em 3em;
   position:relative;
+  opacity: .6;
 }
 
 .nav-item a:hover {
@@ -97,7 +98,7 @@ hr {
   color:white;
 }
 
-.nav-item.active a { cursor: default; }
+.nav-item.active a { cursor: default; opacity:1; }
 .nav-item.active a:hover { color:inherit; }
 
 .nav-icon {
