@@ -23,7 +23,7 @@ $(function(){
       topPadding = 15;
 
     $window.scroll(function() {
-      if ($window.scrollTop() > offset.top) {
+      if ($window.scrollTop() > offset.top && $window.width() > 928) {
           $sidebar.stop().animate({
               marginTop: $window.scrollTop() - offset.top + topPadding
           });
@@ -31,10 +31,10 @@ $(function(){
           $sidebar.stop().animate({ marginTop: 0 });
       }
 
-      if($window.scrollTop() <= 320){
-        $('.sidebar').removeClass('alt')
-      } else {
-        $('.sidebar').addClass('alt')
-      }
+      // if($window.scrollTop() <= 220){
+      //   $('.sidebar').removeClass('alt')
+      // } else {
+      //   $('.sidebar').addClass('alt')
+      // }
     });
 });
