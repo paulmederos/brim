@@ -37,4 +37,11 @@ $(function(){
       //   $('.sidebar').addClass('alt')
       // }
     });
+
+    $('.project').click(function(){
+      // If project clicked, visit the url on the view-project-link.
+      var url = $( this ).find('.view-project-link').attr('href');
+      window.open(url, '_self');
+    });
 });
+

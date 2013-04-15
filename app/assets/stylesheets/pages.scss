@@ -1,8 +1,8 @@
 /* Mixins and Variables for SASS/Compass */
 $primary_link: #7BD9FF;
 
-$primary_font_family: "open-sans", "helvetica", sans-serif;
-$secondary_type_family: "chaparral-pro", "Georgia", serif;
+$primary_font_family: "Open Sans", "open-sans", "helvetica", sans-serif;
+$secondary_type_family: "Chaparral Pro", "chaparral-pro", "Georgia", serif;
 
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -16,11 +16,21 @@ body {
   background-color:#f9f9f9;
 }
 
-h1, h2, h3 {
-  font-family: $secondary_type_family;
+h1, h2 { font-family: $secondary_type_family; font-weight:normal; }
+h1 { font-size:3em; margin:0 0 1.25em;}
+
+h2 {
+  font-size: 3em;
+  margin: 1.5em 0 1em;
+  color:#4a4a4a;
 }
 
-h1 { font-size:3em; margin:0 0 1.25em;}
+h3 { 
+  font-size:1.6em; 
+  font-weight:normal; 
+  margin:2em 0 0; 
+  color:#555; 
+}
 
 a { color: $primary_link; text-decoration:none; @include transition(color 0.25s 0 ease); }
 a:hover { text-decoration:underline; @include transition(color 0.1s 0 ease); }
@@ -82,7 +92,7 @@ hr {
 .nav-items {
   list-style: none;
   padding:0;
-  margin:0;
+  margin:0 0 1em 0;
 }
 
 .nav-item a {
@@ -215,11 +225,51 @@ hr {
   margin-top: 0;
 }
 
+.project { position:relative; display:block; margin-bottom:3em;}
 
+.project h3 { @include transition(color 0.25s 0 ease); }
+.project p { margin-top:.25em; }
 
+.skills-list {
+  margin:0; padding:0; list-style:none;
+}
 
+.skill-item {
+  display: inline-block;
+  font-size:.6em;
+  font-weight:100;
+  color:#666;
+  text-align: center;
+  margin-right: 3%;
+}
 
+.skill-icon { border:none; margin-bottom:.5em; }
+.skill-ux .skill-icon { background-color: #9DE0AD; }
+.skill-ia .skill-icon { background-color: #FF4372; }
+.skill-graphics .skill-icon { background-color: #A169F2; }
+.skill-testing .skill-icon { background-color: #0099CC; }
+.skill-prototyping .skill-icon { background-color: #FF9966; }
+.skill-unused .skill-icon { background-color:#eee; }
 
+.skill-unused { color: #ccc; text-decoration: line-through; }
+
+.project .view-project-link {
+  font-size:.75em; 
+  font-style:italic; 
+  color:#ccc; 
+  font-family:$secondary_type_family;
+  position: absolute;
+  top: 64%;
+  right: 0;
+  @include transition(color 0.25s 0 ease); 
+}
+
+.project:hover { cursor:pointer; }
+.project:hover h3 { color:$primary_link; @include transition(color 0.25s 0 ease);}
+.project:hover .view-project-link { 
+  color:$primary_link; 
+  @include transition(color 0.25s 0 ease); 
+}
 
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
