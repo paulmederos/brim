@@ -279,7 +279,65 @@ hr {
 
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    4.0 Responsive bits 
+    4.0 Project pages
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+
+.project-description h2 {
+  font-style:italic;
+  font-size: 1.8em;
+  margin-top:2em;
+}
+
+.project-description h3 {
+  font-family: $secondary_type_family;
+  font-size: 1em;
+  font-weight:normal;
+  font-style: italic;
+  color:#444;
+}
+
+.numbered-bullet-list {
+  list-style: none;
+  padding:0;
+
+  li { font-weight:100; clear:both; }
+}
+
+.numbered-bullet {
+  float: left;
+  line-height: 1;
+  border-radius: 50%;
+  background: #7BD9FF;
+  padding: .75em;
+  width: 1em;
+  height: 1em;
+  font-weight: bold;
+  color: #FFF;
+  margin-right: 1.5em;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+blockquote.header-quote {
+  padding:0;
+  margin:2em 0 .5em;
+  font-family: $secondary_type_family;
+}
+
+p.header-quote-author {
+  margin-bottom: 4em;
+}
+
+.project-end {
+  font-family: $secondary_type_family;
+  font-style: italic;
+  margin:3em 0;
+  text-align: center;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    5.0 Responsive bits 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
 
 @media only screen and (min-width: 72em) {
