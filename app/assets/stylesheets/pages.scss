@@ -337,7 +337,56 @@ p.header-quote-author {
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    5.0 Responsive bits 
+    5.0 Library page
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+
+.library-list {
+  list-style: none;
+  padding:0;
+  margin-bottom: 4em;
+}
+
+.resource {
+  clear:both;
+  margin: 6em 0;
+}
+
+.resource-cover {
+  float:left;
+  width:30%;
+  min-height: 100px;
+  margin-right:4%;
+  margin-bottom:6em;
+}
+
+.resource-title {
+  font-size:1.8em;
+  margin-bottom: 0;
+}
+
+.resource-author {
+  font-size:1em;
+  margin:0;
+  font-weight: normal;
+  color:#555;
+}
+
+.resource-description {
+  font-size: .85em;
+  font-weight: normal;
+  color:#555;
+}
+
+.resource-tags {
+  font-weight: 100;
+  color:#888;
+  font-size: .8em;
+}
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    6.0 Responsive bits 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
 
 @media only screen and (min-width: 72em) {
