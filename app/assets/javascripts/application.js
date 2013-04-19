@@ -20,15 +20,19 @@ $(function(){
   var $sidebar   = $(".sidebar"), 
       $window    = $(window),
       offset     = $sidebar.offset(),
-      topPadding = 15;
+      topPadding = 15,
+      todaysDate = new Date().getDay(),
+      weekday    = new Array(7);
 
+
+    // Prepare scroll spy
     $window.scroll(function() {
       if ($window.scrollTop() > offset.top && $window.width() > 928) {
           $sidebar.stop().animate({
               marginTop: $window.scrollTop() - offset.top + topPadding
-          });
+          }, 200);
       } else {
-          $sidebar.stop().animate({ marginTop: 0 });
+          $sidebar.stop().animate({ marginTop: 0 }, 200);
       }
 
       // if($window.scrollTop() <= 220){
@@ -38,10 +42,16 @@ $(function(){
       // }
     });
 
+    // Prepare project click link
     $('.project').click(function(){
       // If project clicked, visit the url on the view-project-link.
       var url = $( this ).find('.view-project-link').attr('href');
       window.open(url, '_self');
     });
+
+
+    // Prepare today's date
+    weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    $('#today-date').html(weekday[todaysDate]);
 });
 
