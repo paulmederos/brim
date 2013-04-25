@@ -49,7 +49,6 @@ $(function(){
       window.open(url, '_self');
     });
 
-
     // Prepare today's date
     weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     $('#today-date').html(weekday[todaysDate]);

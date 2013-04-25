@@ -300,6 +300,10 @@ hr {
   @include transition(color 0.25s 0 ease); 
 }
 
+.project.no-writeup:hover { cursor: default; }
+.project.no-writeup:hover h3 { color:inherit; }
+.project.no-writeup:hover .view-project-link { color:inherit; }
+
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     4.0 Project pages
