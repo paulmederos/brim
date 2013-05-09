@@ -9,4 +9,6 @@ Brim::Application.routes.draw do
   match "/portfolio/cfpb-strategic-plan" => "pages#cfpb-strategic-plan", :as => :cfpb_strategic_plan
   match "/portfolio/cfpb-consumer-complaints" => "pages#cfpb-consumer-complaints", :as => :cfpb_consumer_complaints
   match "/portfolio/cfpb-paying-for-college" => "pages#cfpb-paying-for-college", :as => :cfpb_paying_for_college
+
+  match "/portfolio/fosterly" => "pages#fosterly", :as => :fosterly
 end
