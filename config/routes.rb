@@ -11,4 +11,6 @@ Brim::Application.routes.draw do
   match "/portfolio/cfpb-paying-for-college" => "pages#cfpb-paying-for-college", :as => :cfpb_paying_for_college
 
   match "/portfolio/fosterly" => "pages#fosterly", :as => :fosterly
+
+  match "/google" => "pages#google", :as => :google
 end
