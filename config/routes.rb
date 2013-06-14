@@ -13,4 +13,5 @@ Brim::Application.routes.draw do
   match "/portfolio/fosterly" => "pages#fosterly", :as => :fosterly
 
   match "/google" => "pages#google", :as => :google
+  match "/portfolio/trendpo" => "pages#trendpo", :as => :trendpo
 end
