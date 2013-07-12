@@ -14,8 +14,10 @@
 #
 development:
   adapter: postgresql
+  host: localhost
   encoding: unicode
   database: brim_dev
   pool: 5
   username: development
   password:
+ 
